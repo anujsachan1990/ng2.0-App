@@ -27,7 +27,7 @@ body, html {
 
 .bgimg {
     /* Background image */
-    background-image: url('/w3images/forestbridge.jpg');
+    background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
     /* Full-screen */
     height: 100%;
     /* Center the background image */
@@ -105,9 +105,8 @@ var x = setInterval(function() {
 }, 1000);
 
 
-
-
-
+(function(){
+setInterval(function(){
 var z = Notification.requestPermission();
 	new Notification("Anuj Sachan",{
 	title : "anuj",
@@ -118,6 +117,11 @@ var z = Notification.requestPermission();
 z.onclick = function(){
 location.href = "https://www.linkedin.com/in/anuj-sachan-04a3a224/"
 }
+},3000);
+})();
+
+
+
 
 </script>
 </html>
