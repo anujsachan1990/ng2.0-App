@@ -105,21 +105,20 @@ var x = setInterval(function() {
 }, 1000);
 
 
-(function(){
-setInterval(function(){
-var z = Notification.requestPermission();
-	new Notification("Anuj Sachan",{
-	title : "anuj",
-	body:"click here for more Details",
-	icon: "https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-0/p206x206/13244607_1168138356550985_7413641438485410762_n.jpg?oh=7e5f10ee81161a68f871814458d8b57c&oe=59C2AE63"
-});
-
+Notification.requestPermission();
+function test(){
+var z = new Notification("Anuj Looking for Job Change",{
+	body: "click here for more info",
+	icon: "https://scontent.fdel1-1.fna.fbcdn.net/v/t31.0-8/13308654_1168138356550985_7413641438485410762_o.jpg?oh=a62f033da33c09bc03dea09beb69fd51&oe=5989944B",
+	tag:"anuj"
+	});
 z.onclick = function(){
 location.href = "https://www.linkedin.com/in/anuj-sachan-04a3a224/"
 }
-},3000);
-})();
-
+}
+setInterval(function(){
+test();
+},1000)
 
 
 
